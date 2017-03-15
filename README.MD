@@ -15,22 +15,23 @@ Press 'TAB' to reset
 
 # Setup & Run
 1. download the entire folder
-2. moves to the project folder
+2. Follow the GBA Installation Guide (GBA_InstallationGBA instllation guide.txt)
+3. moves to the project folder
 ```
 $ cd src
 ```
-3. compile the project file
+4. compile the project file
 ```
 $ make 
 ```
 It will generate 
-4. open CS2110JaeMinBaek.dba 
+5. open CS2110JaeMinBaek.dba 
 
-5. If you've never executed GBA emulator, you will be required to download some software. Just Click 'Yes'
+6. If you've never executed GBA emulator, you will be required to download some software. Just Click 'Yes'
 
-6. You will see the game screen. Enjoy! 
+7. You will see the game screen. Enjoy! 
 
-##Extra
+## Extra
 1. You can change the blocks if the game is too hard or maybe too boring. 
   1) open 'myLib.c' on your textpad
   2) In 'waitForVblank()' method, change the game speed. 

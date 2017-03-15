@@ -1,0 +1,45 @@
+GBA Tools Installation instructions for Ubuntu or Debian
+
+Steps 1,2,3 are required for HW8, for HW9+ step 4 is required.
+Step 1 The GBA Compiler
+
+Download the file cs2110-tools_1.0-1_i386.deb or cs2110-tools_1.0-1_amd64.deb (if you have a 32-bit or 64-bit installation, respectively).
+Open up a terminal and then navigate to the folder where you saved the downloaded file.
+In the terminal, type in sudo dpkg -i cs2110-tools_1.0-1_i386.deb (or _amd64.deb). You may have to type in your password.
+If the installation succeeds, you should see output like this:
+Selecting previously deselected package cs2110-tools.
+(Reading database ... 123389 files and directories currently installed.)
+Unpacking cs2110-tools (from cs2110-tools_1.0-1_i386.deb) ...
+Setting up cs2110-tools (1.0-1) ...
+Step 2 The GBA Emulators (vbam and wxvbam)
+
+Downlaod the file cs2110-tools-emulator-x.y.z-<arch>.deb (where arch is i386 for 32 bit and amd64 for 64 bit)
+Follow steps 2-4 above (use steps 3-7 here to troubleshoot if it installs perfectly go to step 8)
+Note that you may not have all of the dependencies installed to have the package install correctly you may have something along the lines of the following
+dependency problems prevent configuration of cs2110-tools-emulator:
+ cs2110-tools-emulator depends on libwxgtk2.8-0 (>= 2.8.11); however:
+  Package libwxgtk2.8-0 is not installed.
+Simply install the appropriate package and try again.  (ex. sudo apt-get install libwxgtk2.8-0)
+You may also issue the following command instead (sudo apt-get install -f)
+If 5-6 doesn't work then you do not have the latest packages.  You can issue the following command to update your packages (sudo apt-get update && sudo apt-get upgrade).  This may take awhile.
+For anything else DO AS THE TERMINAL SAYS
+To test if it works type vbam or wxvbam in a terminal. 
+Step 3 GBA Debugging support (printf) 
+
+Make sure you have done steps 1 and 2 first.
+Download the file cs2110-tools-debug.tar.gz
+Extract the archive
+In a terminal where you have extracted the archive (you should have a .h file and a .a file)  type "sudo make" (without the quotes)  You may be asked for your password.
+Step 4 brandontools [necessary to get images into GBA games]
+
+Download brandontools.tar.gz
+Extract the archive
+sudo apt-get install libmagick++-dev libmagickwand-dev libmagickcore-dev
+sudo apt-get install build-essential
+make
+sudo make install
+Troubleshooting
+
+The Debian/Ubuntu packages were developed on Linux Mint 13 (for 32-bit) and should only work on Mint 13/Ubuntu 12.04 or higher.
+If you get an error along the lines of "cannot find package libsdl1.2debian", you need to run sudo apt-get update first.
+These tools will not work on Windows or Mac computers.
