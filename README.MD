@@ -1,12 +1,14 @@
 #BEE ADVENTURE 
 
-Your bee want to go to honeycomb to eat honey. 
+Your bee wants to go to honeycomb to eat honey. 
 However, there are obstacles(pipes) interuptting you from honeycomb section. 
 If you win, you can see the georgia tech trade mark. 
 If your HP is 0, your bee will be dead. 
 
-###Tech Talk
-This game is made of GBA emulator based on C programming language. 
+Used: C, GBA Emulator
+![alt tag](img/movie.gif)
+
+#Feature
 
 ###Functionalities
 1. Winning and Losing Conditions
@@ -18,9 +20,6 @@ This game is made of GBA emulator based on C programming language.
 7. Start Screen and game over screen
 8. Text
 9. Smoothness and no tearing
-
-
-#Feature
 
 #Setup & Run
 1. download the entire folder
@@ -41,8 +40,8 @@ It will generate
 
 ##Extra
 1. You can change the blocks if the game is too hard or maybe too boring. 
-  1) Go to 'file'
-  2) In Line xx, Change to 300~ too hard 400 default 100 slow version
+  1) open 'myLib.c' on your textpad
+  2) In 'waitForVblank()' method, change the game speed. 
   3) Save the file
   4) Don't forget to compile 
   ```

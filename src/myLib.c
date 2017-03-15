@@ -46,7 +46,7 @@ void waitForVblank() {
 	int i;
 	//This slows the game speed. You can set 10 to 20 or 30. 
 	//I could win this game with speed ten (faster)  
-	for(i=0;i<40;i++){
+	for(i=0;i<20;i++){
 		while(SCANLINECOUNTER > 160);
 		while(SCANLINECOUNTER < 160);
 	}
