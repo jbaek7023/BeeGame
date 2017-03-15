@@ -1,27 +1,19 @@
-#BEE ADVENTURE 
+# BEE ADVENTURE 
 
 Your bee wants to go to honeycomb to eat honey. 
 However, there are obstacles(pipes) interuptting you from honeycomb section. 
 If you win, you can see the georgia tech trade mark. 
-If your HP is 0, your bee will be dead. 
 
-Used: C, GBA Emulator
+All written in C. Used GBA Emulator.
 ![alt tag](img/movie.gif)
 
-#Feature
+If your HP is 0, your bee will be dead. Move your bee to survive! 
 
-###Functionalities
-1. Winning and Losing Conditions
-2. Lives
-3. Button Input
-4. 2-Dimensional movement
-5. Collision Detection
-6. Reset Functionality
-7. Start Screen and game over screen
-8. Text
-9. Smoothness and no tearing
+# Control
+Use your left right arrow key. (Use 'a' and 'd' key for alternative)
+Press 'TAB' to reset
 
-#Setup & Run
+# Setup & Run
 1. download the entire folder
 2. moves to the project folder
 ```
